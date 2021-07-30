@@ -5,3 +5,11 @@ Its a centalized config server ...
 starters added -
 1. Config Server 
 2. SB Dev tools
+
+in app.properties file,
+#give the application a good name as below
+spring.application.name=spring-cloud-config-server
+#configure the local folder(git initiated) where the prop files are present
+spring.cloud.config.server.git.uri=file:///C:/Learning/Full-courses/in28minutes/courses/Master_Microservices_with_Spring_Boot_and_Spring_Cloud/workspaces/spring-microservices-v2-writtenByHanil/git-localconfig-repo
+
+-> now we can use this microservice to pick the properties/configs from local git folder/repo and then the MSs where this application (spring-cloud-config-server) is configiured as a config-server will be able to use those properties .
